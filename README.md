@@ -1,8 +1,8 @@
-NPC Movement System for Godot without NavMesh
+NPC Movement System for Godot without NavMesh ------------------
 
 This script provides a complete NPC movement system for 3D games in Godot. It allows an NPC to idle, wander, and chase a player with smooth movement, dynamic speed, and obstacle avoidance. The system relies on physics and raycasts instead of navigation meshes, making it lightweight and efficient.
 
-Features
+Features ------------------
 
 Health management with a visible 3D health bar
 Wandering with random directions and configurable timers
@@ -13,7 +13,7 @@ Obstacle detection and avoidance using raycasts
 Gravity application for realistic vertical movement
 Configurable movement speeds, acceleration, deceleration, and turn speed
 
-Setup
+Setup ------------------
 
 Assign the NPC script to a CharacterBody3D node.
 Add the following child nodes for proper functionality
@@ -28,7 +28,7 @@ Optional Health3D node with a SubViewport containing an HPBar and Label
 
 Set the exported variables in the inspector to adjust movement speed, detection ranges, gravity, and chase parameters.
 
-How it works
+How it works ------------------
 
 The NPC has three states: idle, wander, and chase. In idle state, the NPC stops moving and checks for player proximity. In wander state, the NPC moves in a random direction for a random duration while checking for obstacles and edges. In chase state, the NPC moves toward the player with adjustable speed, strafing behavior, and collision avoidance.
 
@@ -40,7 +40,7 @@ Obstacle avoidance checks the left and right rays and adjusts movement to preven
 
 The _physics_process loop handles movement and state updates, applying gravity, and controlling speed with acceleration and deceleration.
 
-Usage
+Usage ------------------
 
 Call set_target(node) to assign the player or any other object as the chase target.
 Use the exposed variables to fine-tune behavior such as wandering time, chase speed, and detection range.
