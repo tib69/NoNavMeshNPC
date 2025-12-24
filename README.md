@@ -1,4 +1,4 @@
-NPC Movement System for Godot
+NPC Movement System for Godot without NavMesh
 
 This script provides a complete NPC movement system for 3D games in Godot. It allows an NPC to idle, wander, and chase a player with smooth movement, dynamic speed, and obstacle avoidance. The system relies on physics and raycasts instead of navigation meshes, making it lightweight and efficient.
 
